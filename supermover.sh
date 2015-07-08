@@ -7,6 +7,7 @@ if [[ $# -eq 0 ]]
 then
   echo " No arguments supplied "
   echo "USAGE : supermover [typeofcommand : mv cp rm] [fileextension] [source] [destination]"
+  exit 0
 fi
 
 find  $3 -name "*.$2" -exec $1  "{}" $4 \;
